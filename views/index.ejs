@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ОСИС - Главная страница</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header_wrapper">
+        <div class="container">
+            <div class="header">
+                <a href="#main"><img src="image/Logo.svg" alt="" class="menu_logo"></a>
+                <div class="links">
+                    <a href="#news" class="link">новости</a>
+                    <a href="#proj" class="link">проекты</a>
+                    <a href="#review" class="link">отзывы</a>
+                    <a href="/avtor" class="link">войти</a>
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div id="main"></div>
+    <div class="section1_wrapper">
+        <div class="container">
+            <div class="section1">
+                <img src="image/full_logo.png" alt="">
+                <p>Разработка компьютерного ПО</p>
+                <a href='#about' class="btn">Подробнее</a>
+            </div>
+        </div>
+    </div>
+    <div id="about"></div>
+    <div class="section2_wrapper">
+        <div class="container">
+            <div class="section2">
+                <h2>О компании</h2>
+                <p>ОСИС специализируется на внедрении современных компьютерных технологий в бизнес-процессы компаний различного масштаба. Главная задача  — оптимизация работы предприятий с использованием высокотехнологичных решений, что позволяет значительно повысить производительность, сократить затраты и улучшить управление.</p>
+                <p>Реализуем все стадий проекта, в том числе:</p>
+                <div class="stadi">
+                    <div class="block">
+                        <img src="image/gear.svg" alt="">
+                        <p>Технический аудит <br>IT-инфраструктуры</p>
+                    </div>
+                    <div class="block">
+                        <img src="image/projecting.svg" alt="">
+                        <p>Проектирование информационных систем</p>
+                    </div>
+                    <div class="block">
+                        <img src="image/reliaze.svg" alt="">
+                        <p>Реализация проектов</p>
+                    </div>
+                    <div class="block">
+                        <img src="image/support.svg" alt="">
+                        <p>Поддержка внедренных решений</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="news"></div>
+    <div class="section5_wrapper">
+        <div class="container">
+            <div class="section5">
+                <h2>Новостной блог</h2>
+                <div class="content">
+                    <div class="first_news">
+                        <img src="image/<%= firstNews.image %>" alt="<%= firstNews.header %>">
+                        <h3><%= firstNews.header %></h3>
+                        <p><%= firstNews.text %></p>
+                    </div>
+                    <div class="blog">
+                        <div class="second_news">
+                            <img src="image/<%= secondNews.image %>" alt="<%= secondNews.header %>">
+                            <h3><%= secondNews.header %></h3>
+                        </div>
+                        <div class="third_news">
+                            <img src="image/<%= thirdNews.image %>" alt="<%= thirdNews.header %>">
+                            <h3><%= thirdNews.header %></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section3_wrapper">
+        <div class="container">
+            <div class="section3">
+                <h2>Задачи и сферы деятельности</h2>
+                <div class="prob_cont">
+                    <div class="cell">
+                        <h3>Разработка информационных систем</h3>
+                        <p>
+                            Сбор и обработка требований;<br>
+                            Оценка и планирование работ;<br>
+                            Разработка технического задания и спецификаций;<br>
+                            Проектирование системы;<br>
+                            Разработка интерфейсов и отчетности;<br>
+                            Написание кода;<br>
+                            Тестирование и контроль качества разрабатываемого приложения;<br>
+                            Подготовка сопровождающей документации;<br>
+                            Сдача системы в эксплуатацию;<br>
+                            Сопровождение системы — вторая и третья линии технической поддержки.<br>
+                        </p>
+                        <div class="cell_foot"></div>
+                    </div>
+                    <div class="cell">
+                        <h3>Управление и мониторинг ИТ-инфраструктуры</h3>
+                        <p>
+                            Контролировать любые процессы цифровых сетей в режиме 24/7;<br>
+                            Получать информацию о сбоях и рисках для ИТ персонала компании;<br>
+                            Автоматизировать процессы обновления ПО (программного обеспечения);<br>
+                            Централизовано управлять всеми сетевыми процессами из единого АРМ (автоматизированного рабочего места);<br>
+                            Сократить расходы на содержание инфраструктуры за счет централизации администрирования.<br>
+                        </p>
+                        <div class="cell_foot"></div>
+                    </div>
+                    <div class="cell">
+                        <h3>IT-аутсорсинг для комплексного решения ИТ задач</h3>
+                        <p>
+                            ИТ аутсорсинг: полная или частичная передача обязанностей по администрированию технической инфраструктуры организаций;<br>
+                            Поддержка пользователей 1 и 2 уровней.<br>
+                        </p>
+                        <div class="cell_foot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="proj"></div>
+    <div class="section4_wrapper">
+        <div class="container">
+            <div class="section4">
+                <h2>Наши проекты</h2>
+                <div class="butns">
+                    <button class="prev_proj"><img src="image/back arrow.svg" alt=""></button>
+                    <button class="next_proj"><img src="image/Arrow.svg" alt=""></button>
+                </div>
+                <div class="projects">
+                    <% projects.forEach(project => { %>
+                    <div class="project">
+                        <div class="blocks">
+                            <div class="name_block">Проект <%= project.project_id %></div>
+                            <div class="head_block"></div>
+                        </div>
+                        <div class="content">
+                            <h3><%= project.region %> <br> <%= project.name %></h3>
+                            <p><%= project.text %></p>
+                        </div>
+                    </div>
+                    <% }); %>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="review"></div>
+    <div class="section7_wrapper">
+        <div class="container">
+            <div class="section7">
+                <h2>Поделитесь своим мнением</h2>
+                <form action="/review" method="post">
+                    <input type="text" name="review">
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="secrion8_wrapper">
+        <div class="container">
+            <div class="section8">
+                <h2>Что говорят наши клиенты</h2>
+                <div class="slider">
+                    <button class="prev"><</button>
+                    <div class="reviews-container">
+                        <% reviews.forEach(review => { %>
+                        <div class="review">
+                            <h3><%= review.User.first_name %> <%= review.User.last_name %></h3>
+                            <div class="quot"><img src="image/Black quot.svg" alt=""><hr></div>
+                            <p><%= review.text %></p>
+                        </div>
+                        <% }); %>
+                    </div>
+                    <button class="next">></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section6_wrapper">
+        <div class="container">
+            <div class="section6">
+                <h2>Партнеры</h2>
+                <div class="stadi">
+                    <div class="block">
+                        <img src="image/oren_gerb.svg" alt="">
+                        <p>Министерство образования Оренбургской области</p>
+                    </div>
+                    <div class="block">
+                        <img src="image/oren_gerb.svg" alt="">
+                        <p>Министерство цифрового развития и связи Оренбургской области</p>
+                    </div>
+                    <div class="block">
+                        <img src="image/ash_gerb.svg" alt="">
+                        <p>Министерство образования и науки Астраханской области</p>
+                    </div>
+                    <div class="block">
+                        <img src="image/psk_gerb.svg" alt="">
+                        <p>Центр опережающей профессиональной подготовки Псковской области</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section9_wrapper">
+        <div class="container">
+            <div class="section9">
+                <form action="/order" method="post">
+                    <h2>Оставьте заявку</h2>
+                    
+                    <label for="type">Тип программного обеспечения</label>
+                    <select id="type" name="type" required>
+                        <option value="" disabled selected>Выберите тип ПО</option>
+                        <option value="web">Веб-сайт / Веб-приложение</option>
+                        <option value="mobile">Мобильное приложение</option>
+                        <option value="desktop">Десктопное ПО для бизнеса</option>
+                        <option value="crm">CRM-система</option>
+                        <option value="erp">ERP-система</option>
+                    </select>
+                    
+                    <label for="information">Дополнительная информация</label>
+                    <textarea id="information" name="information" placeholder="Опишите ваши требования, сроки и другие детали" required></textarea>
+                
+                    <button type="submit">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer_content">
+                <div class="silki">
+                    <div class="navigation">
+                        <p class="zaglav">Навигация</p>
+                        <a href="#about">О компании</a>
+                        <a href="#prob">Задачи</a>
+                        <a href="#proj">Проекты</a>
+                        <a href="#part">Партнеры</a>
+                    </div>
+                    <div class="tel">
+                        <p class="zaglav">Звонок нам</p>
+                        <p>+7(912)846-48-48</p>
+                    </div>
+                    <div class="pochta">
+                        <p class="zaglav">Почта</p>
+                        <p>info@osis.su</p>
+                    </div>
+                    <div class="mesto">
+                        <p class="zaglav">Местоположение</p>
+                        <p>г. Оренбург ул. Туркестанская, д.5 офис 610</p>
+                    </div>
+                </div>
+                <img src="image/Logo.svg" alt="" class="footer_logo">
+                <p class="prava">© 2020-2024 ООО "Открытие системы и сервисы" Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

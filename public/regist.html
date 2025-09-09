@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ОСИС - Регистрация</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header_wrapper">
+        <div class="container">
+            <div class="header">
+                <a href="/#main"><img src="image/Logo.svg" alt="" class="menu_logo"></a>
+                <div class="links">
+                    <a href="/#news" class="link">новости</a>
+                    <a href="/#proj" class="link">проекты</a>
+                    <a href="/#review" class="link">отзывы</a>
+                    <a href="/avtor" class="link">войти</a>
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <div class="main_wrp">
+                <h1>Регистрация</h1>
+                <form action="/register" method="post">
+                    <label for="first_name">Имя</label>
+                    <input type="text" name="first_name" placeholder="Ваше имя" required>
+
+                    <label for="last_name">Фамилия</label>
+                    <input type="text" name="last_name" placeholder="Ваша Фамилия" required>
+
+                    <label for="email">Почта</label>
+                    <input type="email" name="email" placeholder="Ваш Email" required>
+
+                    <label for="tel">Номер телефона</label>
+                    <input type="tel" name="phone" placeholder="Ваш телефон" required>
+                    
+                    <label for="password">Пароль</label>
+                    <input type="password" name="password" placeholder="Ваш пароль" required>
+
+                    <label for="rep_password">Повторите пароль</label>
+                    <input type="password" name="rep_password" placeholder="Ваш пароль" required>
+
+                    <button type="submit">Зарегистрироваться</button>
+                    <a href="login.html">Войти</a>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer_content">
+                <div class="silki">
+                    <div class="navigation">
+                        <p class="zaglav">Навигация</p>
+                        <a href="/#news">новости</a>
+                        <a href="/#proj">проекты</a>
+                        <a href="/#review">отзывы</a>
+                        <a href="/avtor">войти</a>
+                    </div>
+                    <div class="tel">
+                        <p class="zaglav">Звонок нам</p>
+                        <p>+7(912)846-48-48</p>
+                    </div>
+                    <div class="pochta">
+                        <p class="zaglav">Почта</p>
+                        <p>info@osis.su</p>
+                    </div>
+                    <div class="mesto">
+                        <p class="zaglav">Местоположение</p>
+                        <p>г. Оренбург ул. Туркестанская, д.5 офис 610</p>
+                    </div>
+                </div>
+                <img src="image/Logo.svg" alt="" class="footer_logo">
+                <p class="prava">© 2020-2024 ООО "Открытие системы и сервисы" Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
